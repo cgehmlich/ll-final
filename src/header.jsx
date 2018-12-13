@@ -1,28 +1,46 @@
-import React, { Component } from "react";
+import React from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+} from 'reactstrap';
 
-class Header extends Component {
-    render() {
-        return (
-            <Navbar inverse collapseOnSelect>
-                <Navbar.Header>
-                    <Navbar.Brand>
-                        <a href="/">Watch Around</a>
-                    </Navbar.Brand>
-                    <Navbar.Toggle />
-                </Navbar.Header>
-            <Navbar.Collapse>
-                <Nav> 
-                    <NavItem eventKey={1} href="##">
-                        Sign In 
-                    </NavItem>
-                    <NavItem eventKey={2} href="#">
-                        Register
-                    </NavItem>
-                </Nav>
-            </Navbar.Collapse>
-            </Navbar>
-        );
-    }
+export default class Heading extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render() {
+    return (
+      <div>
+        <Navbar color="light" light expand="md">
+          <NavbarBrand href="/">Watch With Us</NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink href="/signup.jsx">Register</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/signin.jsx">Sign In</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 }
-
-export default Header;
