@@ -9,7 +9,7 @@ import {
   NavLink,
 } from 'reactstrap';
 
-export default class Example extends React.Component {
+export default class Header extends React.Component {
   constructor(props) {
     super(props);
 
