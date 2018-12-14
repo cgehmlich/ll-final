@@ -4,9 +4,10 @@ A web application in which registered and unregistered users join “rooms” an
 ### Our Tech Stack
 * Front End:
     * React
-    * Bootstrap 3
-* Back End:
+    * ReactStrap
+    * Back End:
     * JavaScript
+    * Knex
 * Database
     * PSQL
 * Deployment
