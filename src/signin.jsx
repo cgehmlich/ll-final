@@ -31,7 +31,7 @@ export default class LoginPage extends React.Component {
         const { username, password, submitted } = this.state;
         return (
             <div className="col-md-6 col-md-offset-3">
-            <h2>Login</h2>
+            <h2>Sign In</h2>
             <form name="form" onSubmit={this.handleSubmit}>
                 <div className={'form-group' + (submitted && !username ? ' has-error' : '')}>
                     <label htmlFor="username">Username</label>
@@ -50,7 +50,7 @@ export default class LoginPage extends React.Component {
                 <div className="form-group">
                     <button className="btn btn-primary">Login</button>
                     { loggingIn }
-                    <Link to="/register" className="btn btn-link">Register</Link>
+                    <a href="/register" className="btn btn-link">Register</a>
                 </div>
             </form>
         </div>

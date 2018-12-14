@@ -34,9 +34,6 @@ export default class RegisterPage extends React.Component {
         this.setState({ submitted: true });
         const { user } = this.state;
         const { dispatch } = this.props;
-        if (user.email && user.username && user.password) {
-            dispatch(userActions.register(user));
-        }
     }
 
     render() {
@@ -70,7 +67,7 @@ export default class RegisterPage extends React.Component {
                     <div className="form-group">
                         <button className="btn btn-primary">Register</button>
                         {registering }                     
-                        <Link to="/login" className="btn btn-link">Cancel</Link>
+                        <a href="/login" className="btn btn-link">Cancel</a>
                     </div>
                 </form>
             </div>
