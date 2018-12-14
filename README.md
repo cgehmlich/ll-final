@@ -5,7 +5,7 @@ A web application in which registered and unregistered users join “rooms” an
 * Front End:
     * React
     * ReactStrap
-    * Back End:
+* Back End:
     * JavaScript
     * Knex
 * Database
