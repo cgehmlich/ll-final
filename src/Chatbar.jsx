@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class Chatbar extends React.Component {
+export default class Chatbar extends Component {
     constructor(props) {
         super(props);
         this.state = {

@@ -1,16 +1,19 @@
 import React from 'react';
-import { Media } from 'reactstrap';
-
+import { Card, CardImg, CardText, CardBody,
+         CardTitle, CardSubtitle, Button } from 'reactstrap';
 const Room = () => {
   return (
-    <Media class="room">
-      <Media body>
-        <Media heading>
-          Media heading
-        </Media>
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-      </Media>
-    </Media>
+    <div>
+      <Card>
+        <CardImg top width="20%" src="https://img.youtube.com/vi/mv1XUyRqcGU/0.jpg" alt="Card image cap" />
+        <CardBody>
+          <CardTitle>Card title</CardTitle>
+          <CardSubtitle>Card subtitle</CardSubtitle>
+          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+          <Button>Button</Button>
+        </CardBody>
+      </Card>
+    </div>
   );
 };
 
