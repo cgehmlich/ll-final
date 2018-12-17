@@ -32,7 +32,7 @@ export default class Heading extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href=".jsx">!YOUR USERNAME!</NavLink>
+                <NavLink href=".jsx">{this.state.user}</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/Signin.jsx">Sign Out</NavLink>
